@@ -1,1 +1,6 @@
-<p>dashboard-list works!</p>
+<h2>Dashboard</h2>
+<ul class="dashboard">
+    <li *ngFor="let dashboard of dashboards">
+        <span class="badge">{{dashboard.recipe}}</span> {{ dashboard.date }}
+    </li>
+</ul>
