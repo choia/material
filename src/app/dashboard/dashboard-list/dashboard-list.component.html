@@ -1,6 +1,14 @@
 <h2>Dashboard</h2>
+
+
 <ul class="dashboard">
     <li *ngFor="let dashboard of dashboards">
-        <span class="badge">{{dashboard.recipe}}</span> {{ dashboard.date }}
+        <span class="badge">{{dashboard.recipe}}</span> {{ dashboard.date | date:'MM/dd/yy'}}
     </li>
 </ul>
+
+<mat-list>
+    <mat-list-item> Pepper </mat-list-item>
+    <mat-list-item> Salt </mat-list-item>
+    <mat-list-item> Paprika </mat-list-item>
+</mat-list>
