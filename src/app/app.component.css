@@ -1,0 +1,8 @@
+/* Toolbar */
+.toolbar-space {
+    flex: 1 1 auto;
+}
+
+.search-toolbar {
+    margin:16px;
+}
