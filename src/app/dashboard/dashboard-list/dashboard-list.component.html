@@ -1,14 +1,18 @@
-<h2>Dashboard</h2>
+<mat-tab-group color="accent">
+    <mat-tab label="Dashboard"> Content 1
+        <ul class="dashboard">
+            <li *ngFor="let dashboard of dashboards">
+                <span class="badge">{{dashboard.recipe}}</span> {{ dashboard.date | date:'MM/dd/yy'}}
+            </li>
+        </ul>
+    </mat-tab>
+    <mat-tab label="Discover">
+        <mat-list>
+            <mat-list-item> Pepper </mat-list-item>
+            <mat-list-item> Salt </mat-list-item>
+            <mat-list-item> Paprika </mat-list-item>
+        </mat-list>
+    </mat-tab>
 
-
-<ul class="dashboard">
-    <li *ngFor="let dashboard of dashboards">
-        <span class="badge">{{dashboard.recipe}}</span> {{ dashboard.date | date:'MM/dd/yy'}}
-    </li>
-</ul>
-
-<mat-list>
-    <mat-list-item> Pepper </mat-list-item>
-    <mat-list-item> Salt </mat-list-item>
-    <mat-list-item> Paprika </mat-list-item>
-</mat-list>
+    <mat-tab label="Share"> Content 3 </mat-tab>
+</mat-tab-group>
