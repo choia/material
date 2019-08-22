@@ -31,6 +31,12 @@ export const DASHBOARD: Dashboard[] = [
         day: 'Monday',
         recipe: 'Ham & Cheese Sandwich'
     },
+    {
+        id: 7,
+        date: '1 November 2019 16:16:02 GMT',
+        day: 'Monday',
+        recipe: 'Chicken Sandwich'
+    },
 
 ];
 
